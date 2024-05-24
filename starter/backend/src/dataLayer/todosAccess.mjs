@@ -85,7 +85,7 @@ export class TodosAccess {
   }
 
   async delete(userId, todoId) {
-    logger.info(`Removing TODO: ${todoId} for user: ${userId}`);
+    logger.info(`Delete TODO: ${todoId} for user: ${userId}`);
     await this.dynamoDbClient.delete({
       TableName: this.todosTable,
       Key: {
