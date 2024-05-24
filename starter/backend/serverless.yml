@@ -50,7 +50,7 @@ functions:
   Auth:
     handler: src/lambda/auth/auth0Authorizer.handler
 
-  # TODO: Configure this function
+  # Configure getTodos function
   GetTodos:
     handler: src/lambda/http/getTodos.handler
     events:
@@ -71,7 +71,7 @@ functions:
           - "xray:PutTelemetryRecords"
         Resource:
           - "*"
-  # TODO: Configure this function
+  # Configure createTodo function
   CreateTodo:
     handler: src/lambda/http/createTodo.handler
     events:
@@ -96,7 +96,7 @@ functions:
         Resource:
           - "*"
 
-  # TODO: Configure this function
+  # Configure updateTodo function
   UpdateTodo:
     handler: src/lambda/http/updateTodo.handler
     events:
@@ -122,7 +122,7 @@ functions:
         Resource:
           - "*"
 
-  # TODO: Configure this function
+  # Configure deleteTodo function
   DeleteTodo:
     handler: src/lambda/http/deleteTodo.handler
     events:
@@ -144,7 +144,7 @@ functions:
         Resource:
           - "*"
 
-  # TODO: Configure this function
+  # Configure generateUploadUrl function
   GenerateUploadUrl:
     handler: src/lambda/http/generateUploadUrl.handler
     events:
